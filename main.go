@@ -1,12 +1,12 @@
 package main
 
 import (
+	"example/api"
 	_ "example/structures"
-	"fmt"
 )
 
 type PersonI interface {
-	getName () string
+	getName() string
 }
 
 type Person struct {
@@ -20,9 +20,11 @@ func (p *Person) getName() string {
 func main() {
 	// structures.Structures()
 
-	jo := Person{name: "Jo"}
-	
-	name := jo.getName()
+	// jo := Person{name: "Jo"}
 
-	fmt.Println(name)
+	// name := jo.getName()
+
+	// fmt.Println(name)
+
+	api.CheckJsonResponse()
 }

@@ -1,7 +1,8 @@
 package main
 
 import (
-	. "example/pkg/samples"
+	"example/api"
+	// . "example/pkg/samples"
 	_ "example/structures"
 )
 
@@ -18,6 +19,7 @@ func (p *Person) getName() string {
 }
 
 func main() {
+	api.Server()
 	// structures.Structures()
 
 	// jo := Person{name: "Jo"}
@@ -32,5 +34,5 @@ func main() {
 	// RunesLand()
 	// RateLimiting()
 	// Generics()
-	CompareWithFile()
+	// CompareWithFile()
 }

@@ -1,7 +1,7 @@
 package main
 
 import (
-	"example/api"
+	. "example/pkg/samples"
 	_ "example/structures"
 )
 
@@ -23,8 +23,14 @@ func main() {
 	// jo := Person{name: "Jo"}
 
 	// name := jo.getName()
-
 	// fmt.Println(name)
 
-	api.CheckJsonResponse()
+	// api.CheckJsonResponse()
+
+	// === Samples ===
+	// VariadicFuncExample("fish", "kitten", "dog")
+	// RunesLand()
+	// RateLimiting()
+	// Generics()
+	CompareWithFile()
 }
